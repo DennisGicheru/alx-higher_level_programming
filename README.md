@@ -1,3 +1,4 @@
 # alx-higher-level-programming
-#Description\n
+Higher Level Programming
+# Description
 Learning higher level programming using Python, C and bash
