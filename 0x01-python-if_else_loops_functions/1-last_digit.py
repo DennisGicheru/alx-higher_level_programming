@@ -9,4 +9,4 @@ elif last_digit == 0:
     last_str = "0"
 else:
     last_str = "less than 6 and not 0"
-print("Last digit of {} is {} and is {}".format(number,last_digit,last_str)) 
+print("Last digit of {} is {} and is {}".format(number, last_digit, last_str))
