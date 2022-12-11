@@ -7,7 +7,7 @@ if __name__ == "__main__":
         for j in range(len(item[i])):
             if (item[i][j] == '_' and item[i][j+1] == '_'):
                 break
-           
+
             else:
                 print(item[i])
                 break
