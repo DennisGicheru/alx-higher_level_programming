@@ -2,9 +2,9 @@
 
 
 def print_reversed_list_integer(my_list=[]):
-    if my_list is None:
-        print('', end='')
-    
+    if not my_list:
+        pass
+        
     else:
         my_list.reverse()
         for j in range(len(my_list)):
