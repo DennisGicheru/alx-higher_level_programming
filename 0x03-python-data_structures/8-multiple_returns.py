@@ -4,7 +4,6 @@
 def multiple_returns(sentence):
     i = 0
     list_a = list(sentence)
-    first = ""
     length = len(list_a)
 
     if len(list_a) != 0:
