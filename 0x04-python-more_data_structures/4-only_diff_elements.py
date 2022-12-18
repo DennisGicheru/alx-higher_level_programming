@@ -2,7 +2,6 @@
 
 
 def only_diff_elements(set_1, set_2):
- #  return(set_1 ^ set_2) - short answer(works)
     list_1 = list(set_1)
     list_2 = list(set_2)
     list_3 = []
