@@ -1,15 +1,15 @@
 #!/usr/bin/python3
+"""
+ divides 2 integers and prints the result.
+     """
 
 
 def safe_print_division(a, b):
     try:
         c = a / b
     except ZeroDivisionError:
-        pass
+        c = None
+    else:
+        return(c)
     finally:
-        if b != 0:
-            print("Inside Result: {}".format(c))            
-        else:
-            print("Inside Result: None")
-            return(None)
-    return(c)
+        print("Inside result: {}".format(c))
