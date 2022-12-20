@@ -2,12 +2,11 @@
 
 
 def safe_print_integer(value):
-    val = 0
     try:
         val = int(value)
-        if val / 1 == val:
-            print("{:d}".format(val))
+        if val is not None:
+            print("{:d}".format(val), end="")
+            print("")
         return True
     except ValueError:
         return False
-    print("")
