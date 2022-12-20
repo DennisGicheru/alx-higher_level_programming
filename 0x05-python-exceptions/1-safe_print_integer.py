@@ -3,10 +3,7 @@
 
 def safe_print_integer(value):
     try:
-        val = int(value)
-        if val is not None:
-            print("{:d}".format(val), end="")
-            print("")
+        print("{:d}".format(value))
         return True
-    except (TypeError, ValueError, IndexError):
+    except Exception:
         return False
