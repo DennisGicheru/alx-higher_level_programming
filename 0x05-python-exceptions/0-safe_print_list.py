@@ -6,17 +6,13 @@ def safe_print_list(my_list=[], x=0):
     if my_list is None:
         return None
     else:
-        for i in my_list:
+        for i in range(0, x):
             try:
-                print("{}".format(my_list[i-1]), end="")
+                print("{}".format(my_list[i]), end="")
                 n += 1
                 if n >= x:
                     break
-                else:
-                    continue
-            except IndexError:
-                print("error,index out of range")
-            except TypeError:
-                print("type error detected")
+            except:
+                continue
         print("")
         return(n)
