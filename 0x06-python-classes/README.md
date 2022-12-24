@@ -1,7 +1,7 @@
 # Classes and Objects in Python
 learning Object Oriented Programming in Python and how it functions
 
-#Description
+# Description
 What is OOP
 First class Everything
 What is a class. WHat is an object and what is an Instance
