@@ -6,4 +6,5 @@ Empty class that defines a Rectange
 
 
 class Rectangle:
+    """empty Rectangle Class"""
     pass
