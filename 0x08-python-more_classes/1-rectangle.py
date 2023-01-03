@@ -5,7 +5,7 @@ Empty class that defines a Rectangle
 """
 
 
-class Rectangle: 
+class Rectangle:
     """Define Height and width"""
     def __init__(self, width=0, height=0):
         self.height = height
