@@ -63,11 +63,12 @@ class Rectangle:
         use iteration to loop through height and width
         """
         if self.__height == 0 or self.__width == 0:
-            return ("")
+            return ""
 
-        string = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                string += "#"
-            string = string + "\n"
-        return str(string)
+        return((("#" * self.__width) + "\n")*self.__height)[:-1]
+        #string = ""
+        #for i in range(self.__height):
+        #    for j in range(self.__width):
+        #        string += "#"
+        #    string = string + "\n"
+        #return str(string)
