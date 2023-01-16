@@ -3,6 +3,8 @@
 """
 if object is instance of or if object is instance of a class
 """
+
+
 def is_kind_of_class(obj, a_class):
     """Returns True if condition is met
         @args:
