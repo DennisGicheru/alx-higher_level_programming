@@ -7,6 +7,6 @@ import os
 
 def read_file(filename=""):
     """Open file, use read command to read files"""
-    with open(filename, encoding="utf-8") as File1:
+    with open(filename, mode="r", encoding="utf-8") as File1:
         """write output to stdout"""
-        print(File1.read())
+        print(File1.read(), end="")
