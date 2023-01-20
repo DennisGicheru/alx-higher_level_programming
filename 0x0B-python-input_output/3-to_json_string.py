@@ -7,4 +7,4 @@ import json
 
 def to_json_string(my_obj):
     """use dumps method"""
-    return (json.dumps(my_obj))
+    return (json.loads(my_obj))
