@@ -6,5 +6,7 @@ import json
 
 
 def to_json_string(my_obj):
-    """use dumps method"""
-    return (json.loads(my_obj))
+    """use loads method
+    @my_obj -object to be loaded
+    """
+    return json.dumps(my_obj)
