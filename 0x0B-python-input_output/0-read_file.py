@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import os
 
 """simple function that reads a text file \
     and prints to stdout"""
