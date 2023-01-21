@@ -10,7 +10,8 @@ load_from_json_file = __import__('6-load_from_json_file').load_to_json_file
 
 with open("add_item.json", "a") as f:
     try:
-        var = load_from_json_file(f)
+        items = load_from_json_file(f)
     except ValueError:
-        var = []
-    save_to_json_file(var + sys.argv[1:], f)
+        items = []
+    items.extend(sys.argv[1:])
+    save_to_json_file(items, f)
