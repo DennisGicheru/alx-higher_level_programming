@@ -10,7 +10,7 @@ def load_from_json_file(filename):
     open file then create object \
     using load command (minus s)
     """
-    with open(filename, "w") as f:
+    with open(filename, encoding="utf-8") as f:
         """create object using
         f as representation of json
         file"""
