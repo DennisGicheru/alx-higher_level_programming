@@ -105,19 +105,12 @@ class Rectangle(Base):
 
     def display(self):
         """
-            display: prints in stdout the rectangle instance \
-            with the character #
+            Display The Rectangle Using  '#'
         """
-        for row in range(self, y):
-            print("")
-
-        for col in range(self.height):
-            for k in range(self.x):
-                print(" ", end="")
-            for j in range(self.width):
-                print("#", end="")
-            print("")
-
+        print(("\n" * self.__y) +
+              "\n".join(((" " * self.__x) + ("#" * self.__width))
+                        for i in range(self.__height))
+    
     def __str__(self):
         """
             __str__ print information for rectangle
