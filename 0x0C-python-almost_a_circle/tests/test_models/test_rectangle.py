@@ -144,9 +144,9 @@ class TestRectangle(unittest.TestCase):
     def test_update_args_setter(self):
         """tests that the update method uses setter with *args"""
         r = Rectangle(1, 1, 0, 0, 1)
-        with self.assertRaisesRegex(TypeError, "width must be of type int"):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
             r.update(1, "hello")
-        with self.assertRaisesRegex(TypeError, "height must be of type int"):
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
             r.update(1, 1, "hello")
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             r.update(1, 1, 1, "hello")
