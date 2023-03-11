@@ -12,7 +12,7 @@ class Square(Rectangle):
     """
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
-        self.siz = size
+        self.size = size
 
     def __str__(self):
         """
@@ -22,7 +22,7 @@ class Square(Rectangle):
             [str]: [Square] (<id>) <x>/<y> - <size>
         """
         return '[Square] ({:d}) {:d}/{:d} - {:d}'.format(self.id, self.x,
-                self.y, self.width)
+                                                         self.y, self.width)
 
     @property
     def size(self):
@@ -52,6 +52,7 @@ class Square(Rectangle):
         else:
             for arg in kwargs:
                 setattr(self, arg, kwargs.get(arg))
+
     def to_dictionary(self):
         """
             returns the dictionary

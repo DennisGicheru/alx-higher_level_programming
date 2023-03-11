@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#base.py
+# base.py
 """Define base class"""
 import json
 from os import path
@@ -18,8 +18,8 @@ class Base():
         if id is not None:
             self.id = id
         else:
-             Base.__nb_objects += 1
-             self.id = Base.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
