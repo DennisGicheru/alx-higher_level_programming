@@ -48,13 +48,13 @@ class Rectangle(Base):
         return self.__y
 
     @width.setter
-    def width(self, value)
+    def width(self, value):
         """
         Attributes:
             Value(int): value to be assigned
 
         Raises:
-            TypeError: value must be int
+            TypeError: value must be of type int
             ValueError: Value must be > 0
         """
         if type(value) is not int:
@@ -64,13 +64,13 @@ class Rectangle(Base):
         self.__width = value
 
     @height.setter
-    def width(self, value)
+    def height(self, value):
         """
         Attributes:
             Value(int): value to be assigned
 
         Raises:
-            TypeError: Value must be int
+            TypeError: Value must be of type int
             ValueError: Value must be > 0
         """
         if type(value) is not int:
@@ -80,7 +80,7 @@ class Rectangle(Base):
         self.__height = value
 
     @x.setter
-    def x(self, x)
+    def x(self, x):
         """Setter value for x"""
         if type(x) is not int:
             raise TypeError("x must be an integer")
@@ -89,11 +89,11 @@ class Rectangle(Base):
         self.__x = x
 
     @y.setter
-    def y(self, y)
+    def y(self, y):
         """setter value for y"""
         if type(y) is not int:
             raise TypeError("y must be an integer")
-        if x < 0:
+        if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
 
