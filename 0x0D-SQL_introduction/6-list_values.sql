@@ -1,2 +1,2 @@
 --lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server
-SHOW TABLES FROM hbtn_0c_0 WHERE ROW LIKE "%";
+SELECT * FROM first_table;
