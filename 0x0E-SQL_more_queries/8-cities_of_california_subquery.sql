@@ -3,6 +3,9 @@
 -- Do not use JOIN
 USE hbtn_0d_usa;
 SELECT id, name
-FROM cities, states
-WHERE states.name = 'California%';
-ORDER BY cities.id ASC;
+FROM cities
+WHERE states_id IN (
+		SELECT id
+		FROM states
+		WHERE id LIKE 'California%')
+ORDER BY id ASC;
