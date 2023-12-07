@@ -7,4 +7,4 @@ def uniq_add(my_list=[]):
 
     for val in set_a:
         result += val
-    return(result)
+    return (result)
