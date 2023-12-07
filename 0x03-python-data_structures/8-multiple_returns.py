@@ -14,4 +14,4 @@ def multiple_returns(sentence):
         first = None
 
     tuple_new = tuple(list_a)
-    return(i, first)
+    return (i, first)
