@@ -10,4 +10,4 @@ def class_to_json(obj):
     with simple data structure (list,
     dictionary, string integer)
     """
-    return(obj.__dict__)
+    return (obj.__dict__)
