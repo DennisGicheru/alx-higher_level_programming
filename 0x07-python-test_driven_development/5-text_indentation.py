@@ -19,7 +19,7 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
- 
+
     for i in text:
         a = ord(i)
         if a == 46 or a == 63 or a == 58:

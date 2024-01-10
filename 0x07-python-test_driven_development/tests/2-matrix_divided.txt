@@ -62,7 +62,7 @@ Testing missing 1 arg
 	...
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
-Testing no arg 
+Testing no arg
     >>> matrix_divided()
     Traceback (most recent call last):
     ...

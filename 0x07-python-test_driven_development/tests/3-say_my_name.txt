@@ -14,7 +14,7 @@ Testing Normal Display
 
 Testing There is no Last name
     >>> say_my_name('Ahmed')
-    My name is Ahmed 
+    My name is Ahmed
 
 Testing First Name is Not str
     >>> say_my_name(5, 'Belhaj')
