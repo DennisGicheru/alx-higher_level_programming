@@ -1,18 +1,9 @@
 #!/usr/bin/node
 
-let biggest = 0;
-let i = 0;
-const arr = [];
-
-for (i = 2; i < process.argv.length; i++) {
-  if (!Number.isNaN(process.argv[i])) {
-    arr[i - 2] = Number.parseInt(process.argv[i]);
-  }
+// pritns the second largest number in a list of integers
+if (process.argv.length <= 3) {
+  console.log(0);
+} else {
+  const output = process.argv.map(Number).slice(2).sort((a, b) => a - b).reverse();
+  console.log(output[1]);
 }
-if (arr.length > 2) {
-  biggest = Math.max.apply(null, arr);
-  i = arr.indexOf(biggest);
-  arr[i] = -Infinity;
-  biggest = Math.max.apply(null, arr);
-}
-console.log(biggest);
