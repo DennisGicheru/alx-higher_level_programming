@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const SqInherit = require('./5-square');
+const Sq5 = require('./5-square');
 
-class Square extends SqInherit {
+module.exports = class Square extends Sq5 {
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
@@ -14,6 +14,4 @@ class Square extends SqInherit {
       console.log(str);
     }
   }
-}
-
-module.exports = Square;
+};
