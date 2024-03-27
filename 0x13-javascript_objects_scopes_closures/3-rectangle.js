@@ -1,5 +1,6 @@
 #!/usr/bin/node
-export default class Rectangle {
+
+module.exports = class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
@@ -12,4 +13,4 @@ export default class Rectangle {
       console.log('X'.repeat(this.width));
     }
   }
-}
+};
